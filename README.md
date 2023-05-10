@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/QoslDMQ.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QoslDMQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 1. Create a Resource Group in Microsoft Azure. Name your Resource Group "osTicket" and then select the region you desire. In this case, I chose (US) West US 3. Note: Remember to select the same region for your Virtual Machine to avoid errors.
