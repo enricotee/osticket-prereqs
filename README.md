@@ -219,9 +219,145 @@ Password: osTicketPassword1! (for example/whatever you chose)
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/8mZP9KC.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+17. Download osTicket.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/8X3MtiD.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+17a. Extract and copy “upload” folder to c:\inetpub\wwwroot
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/HD9uoAr.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+17b. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ECTS1Tf.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+18. Reload IIS (Open IIS, Stop and Start the server)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ujesVxx.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+19. Go to sites -> Default -> osTicket. On the right, click “Browse *:80”
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/NasetgE.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/hlqU7VG.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DDwgeSt.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jdg43db.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+20. Note that some extensions are not enabled. Go back to IIS, sites -> Default -> osTicket. Double-click PHP Manager. Click “Enable or disable an extension”, Enable: php_imap.dll, Enable: php_intl.dll., Enable: php_opcache.dll., Refresh the osTicket site in your browse, observe the changes
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/zWgFpDi.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/I6uTqaq.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+21. Rename: ost-config.php, From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Nv8uN1P.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dTeuPQe.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/rScllfb.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/K45lqu5.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/C2nNkUk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/WljbBmx.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LPkzidY.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2osoUhU.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+</p>
+<p>
+22. Assign Permissions: ost-config.php, Disable inheritance -> Remove All, New Permissions -> Everyone -> All
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/jdg43db.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2LI96UQ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p>
+NOTE: INFORMATION CAN BE DIFFERENT THAN MINE AS I HAVE ENCOUNTERED ERRORS AT THE END. REMEMBER TO PUT DIFFERENT EMAIL ADDRESSES AND NOT USE ADMIN AS A USERNAME. 
+</p>
+<img src="https://i.imgur.com/jdg43db.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+23. Continue Setting up osTicket in the browser (click Continue), Name Helpdesk, Default email (receives email from customers). Note: Remember to write down login information on notepad (For practice only). WARNING: DO NOT CLICK "INSTALL NOW" YET UNTIL HEIDI SQL IS INSTALLED.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Bbp13Q9.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xV9KX4N.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p>
+Keep clicking next.
+</p>
+<img src="https://i.imgur.com/2tg1nlP.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bGwpunq.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/PfRbZA4.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gSDx4tR.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7aSz60Q.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3R5uBJF.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+24. From the Installation Files, download and install HeidiSQL. Open Heidi SQL. Create a new session, root/Password1, Connect to the session, Create a database called “osTicket”.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/hWeO1wk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+25. Continue Setting up osticket in the browser, MySQL Database: osTicket, MySQL Username: root, MySQL Password: Password1, Click “Install Now!”
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/EhTqYpM.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yFcYRpL.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+26. Congratulations, hopefully it is installed with no errors! Browse to your help desk login page: http://localhost/osTicket/scp/login.php NOTE: I DID ENCOUNTER A COUPLE ERRORS DUE TO A BAD USERNAME AND CONFLICTING EMAILS. CHANGED USERNAME FROM ADMIN TO EXAMPLE. CHANGED USER EMAIL TO EXAMPLE@HELPER.COM SO IT WON'T CONFLICT WITH THE DEFAULT EMAIL ADDRESS.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/8aXqchj.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+27. End Users osTicket URL: http://localhost/osTicket/ 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/eqX0YEp.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DHQdtkk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/iXlgXva.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yKbho4H.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+28. Clean up, Delete: C:\inetpub\wwwroot\osTicket\setup, Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php, Notes: Browse to your help desk login page: http://localhost/osTicket/scp/login.php , End Users osTicket URL: http://localhost/osTicket/ 
 </p>
 <br />
