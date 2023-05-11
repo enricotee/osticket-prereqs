@@ -339,7 +339,7 @@ Keep clicking next.
 <img src="https://i.imgur.com/yFcYRpL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-26. Congratulations, hopefully it is installed with no errors! Browse to your help desk login page: http://localhost/osTicket/scp/login.php NOTE: I DID ENCOUNTER A COUPLE ERRORS DUE TO A BAD USERNAME AND CONFLICTING EMAILS. CHANGED USERNAME FROM ADMIN TO EXAMPLE. CHANGED USER EMAIL TO EXAMPLE@HELPER.COM SO IT WON'T CONFLICT WITH THE DEFAULT EMAIL ADDRESS.
+26. Congratulations, hopefully it is installed with no errors! Browse to your help desk login page: http://localhost/osTicket/scp/login.php NOTE: I DID ENCOUNTER A COUPLE OF ERRORS DUE TO A BAD USERNAME AND CONFLICTING EMAILS. CHANGED USERNAME FROM ADMIN TO EXAMPLE. CHANGED USER EMAIL TO EXAMPLE@HELPER.COM SO IT WON'T CONFLICT WITH THE DEFAULT EMAIL ADDRESS.
 </p>
 <br />
 
